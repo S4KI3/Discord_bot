@@ -1,3 +1,4 @@
+from keep_alive import keep_alive
 import discord
 import google.generativeai as genai
 import os
@@ -58,4 +59,5 @@ async def on_message(message):
                 print(f"Error: {e}")
 
 # Run the bot
+keep_alive()
 client.run(DISCORD_TOKEN)
